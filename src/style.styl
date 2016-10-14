@@ -1,0 +1,191 @@
+$bgcolor = #FAF0E6
+$facecolor = #FFEFD5
+$eyescolor = #696969
+$haircolor = #CD853F
+$beardcolor = #F0FFFF
+$headspotcolor = #8B4513
+$earcolor = #8B4513
+$earinsidecolor =	#D2B48C
+
+center()
+	left:50%
+	-webkit-transform:translateX(-50%)
+
+size(w,h=0)
+	if h == 0
+		width:w
+		height:w
+	else
+		width:w
+		height:h
+
+html
+	font-size 20px;
+
+
+
+#cat
+	position: relative
+	margin 0 auto
+	width: 30rem;
+	height: 30rem;
+	background-color: $bgcolor;
+
+#cat div
+	position: absolute
+	
+.ear_left
+	size(12rem,12rem)
+	top 3rem
+	background-color: $earcolor
+	border-radius 0 8rem 
+	-webkit-transform: rotate(7deg)
+	left 4rem
+
+.ear_right
+	size(12rem,12rem)
+	top 3rem
+	background-color: $earcolor
+	border-radius 0 8rem 
+	-webkit-transform: rotate(84deg)
+	left 14rem
+
+.earinside
+	size(9rem,9rem)
+	top 1rem
+	left 1rem
+	background-color: $earinsidecolor
+	border-radius 0 6rem
+
+
+.head
+	overflow:hidden
+	top 4.5rem
+	left 5rem
+	size(20rem)
+	background:linear-gradient(to bottom,$haircolor 30%,$facecolor 30%)
+	border-radius 30% 30% 50% 50% / 50% 50% 50% 50%
+		
+.face_left
+	size(12rem,8rem)
+	top 5rem
+	background-color: $facecolor
+	border-radius 0 8rem 
+	-webkit-transform: rotate(7deg)
+	
+.face_center
+	size(12rem,12rem)
+	top 2.5rem
+	background-color: $facecolor
+	border-radius 0 8rem 
+	-webkit-transform: rotate(45deg)
+	left 4rem
+
+
+.face_right
+	size(13rem,9rem)
+	top 5rem
+	background-color: $facecolor
+	border-radius 0 8rem 
+	-webkit-transform: rotate(113deg)
+	left 7rem
+	
+.headspot_left
+	border-top 6rem solid $headspotcolor
+	border-left 1rem solid transparent
+	border-right 1rem solid transparent
+	top 0rem
+	left 6.5rem
+
+
+.headspot_center
+	border-top 5rem solid $headspotcolor
+	border-left 1rem solid transparent
+	border-right 1rem solid transparent
+	top 0rem
+	left 9rem
+
+	
+.headspot_right
+	border-top 6rem solid $headspotcolor
+	border-left 1rem solid transparent
+	border-right 1rem solid transparent
+	top 0rem
+	left 11.5rem
+
+	
+.eyes
+	-webkit-transform: rotate(11deg)
+	size(5rem,3rem)
+	top 6rem
+	background-color: $eyescolor
+	border-radius 0 5rem 
+	box-shadow -0.5rem 0 0 #000
+	
+.eyesball
+	size(2.5rem)
+	center()
+	top 0.25rem
+	background-color: #000
+	border-radius 50% 50%
+	
+.eyes_left
+	left 2rem
+
+.eyes_right
+	right 2rem
+	-webkit-transform:rotate(-11deg) rotateY(180deg)
+	
+.nose
+	top 11rem
+	size(2rem,1rem)
+	background-color: #000
+	border-radius 0 0 40% 40% / 0 0 1rem 1rem
+	center()
+
+	
+.mouth
+	size(3rem,1.5rem)
+	border-radius 0 0 3rem 3rem
+	border-bottom 0.5rem solid #000
+	top 14rem
+	
+.mouth_left
+	left 35%
+	
+.mouth_right
+	left 50%
+	
+.beard
+	size(8rem,8rem)
+	top 9.5rem
+
+
+.beard_left
+	left -1rem
+
+.beard_right
+	right -1rem
+	-webkit-transform rotateY(180deg)
+
+
+.beard_top
+	top 1rem
+	border-bottom 0.5rem solid $beardcolor
+	width 5rem
+	-webkit-transform rotate(10deg)
+	
+.beard_center
+	border-bottom 0.5rem solid $beardcolor
+	top 2.5rem
+	width 5rem
+	
+.beard_bottom
+	border-bottom 0.5rem solid $beardcolor
+	top 4rem
+	width 5rem
+	-webkit-transform rotate(-8deg)
+
+
+	
+
