@@ -7,7 +7,7 @@ html {
 	margin: 0 auto;
 	width: 30rem;
 	height: 30rem;
-	background-color: #faf0e6;
+	background-color: #7E3D76;
 }
 
 #cat div {
@@ -164,15 +164,15 @@ html {
 .beard {
 	width: 8rem;
 	height: 8rem;
-	top: 9.5rem;
+	top: 14.5rem;
 }
 
 .beard_left {
-	left: -1rem;
+	left: 3rem;
 }
 
 .beard_right {
-	right: -1rem;
+	right: 3rem;
 	-webkit-transform: rotateY(180deg);
 }
 

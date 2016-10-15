@@ -40,6 +40,6 @@ module.exports = {
     ]
   },
   postcss: function(){
-    return [require('postcss-simple-vars')]
+    return [require('postcss-simple-vars') ,autoprefixer]
   }
 };
